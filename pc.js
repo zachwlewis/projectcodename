@@ -1,8 +1,8 @@
 var attributes = [
 	"glass",
-	"desert",
-	"hidden",
-	"covert",
+	// Environ
+	"desert", "tundra", "mountain", "space", "field", "urban",
+	"hidden", "covert",
 	"rowdy",
 	"dangerous",
 	"explosive",
@@ -13,28 +13,28 @@ var attributes = [
 	"waning",
 	"warring",
 	// Organic Gems
-	"amber", "ammolite", "bone", "coral", "ivory", "jet", "nacre", "pearl", "obsidian", "unakite",
+	"amber", "bone", "coral", "ivory", "jet", "nacre", "pearl", "obsidian",
 	// Regular Gems
-	"agate", "alexandrite", "andalusite", "axinite", "benitoite", "aquamarine", "beryl", "bixbite", "cassiterite", "chrysocolla", "chrysoprase", "clinohumite", "iolite", "danburite", "diamond", "diopside", "dumortierite",
-	"opal",
-	"ruby",
-	"onxy",
-	"sapphire",
-	"emerald",
-	"jade",
+	"agate", "beryl", "diamond", "opal", "ruby", "onxy", "sapphire", "emerald", "jade"
 ]
 
 var objects = [
 	// Large cats
 	"panther", "wildcat", "tiger", "lion", "cheeta", "cougar", "leopard",
 	// Snakes
-	"viper", "cottonmouth", "python",
+	"viper", "cottonmouth", "python", "boa", "sidewinder", "cobra",
+	//
 	"grizzly",
-	"wildabeast",
+	// Prey
+	"wildabeast", "gazelle", "zebra", "elk", "moose", "deer", "stag",
+	//
 	"jackal",
+	//
 	"nomad",
-	"mainframe",
-	"octopus"
+	// Technology
+	"mainframe", "device", "motherboard", "network", "transistor", "packet",
+	// Sea life
+	"octopus", "lobster", "crab", "barnacle", "hammerhead", "orca", "piranha"
 ]
 
 var type = "PROJECT";
@@ -69,7 +69,9 @@ function switchType()
 
 function updateTwitterButton()
 {
-	$('.twitter-share-button').attr('data-text', type + ": " + codename + " is a go.");
+	$('#twitter').replaceWith("<a href=\"https://twitter.com/share\" id=\"twitter\" class=\"twitter-share-button\" data-via=\"zachwlewis\" data-url=\"http://projectcodename.com\">Tweet</a>");
+	$('#twitter').attr('data-text', type + ": " + codename + " is a go.");
+
 	if(typeof(twttr) !== 'undefined')
 	{
 		twttr.widgets.load();

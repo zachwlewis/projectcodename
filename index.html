@@ -4,37 +4,82 @@
 	   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	  <link rel="stylesheet" href="css/bootstrap.min.css">
 	  <style>
-	  	body
+
+	  	html,
+		body {
+		  height: 100%;
+		  /* The html and body elements cannot have any padding or margin. */
+		}
+
+		/* Wrapper for page content to push down footer */
+		#wrap {
+		  min-height: 100%;
+		  height: auto;
+		  /* Negative indent footer by its height */
+		  margin: 0 auto -60px;
+		  /* Pad bottom by footer height */
+		  padding: 0 0 60px;
+		}
+
+		/* Set the fixed height of the footer here */
+		#footer {
+		  height: 60px;
+		  background-color: #222;
+		}
+
+		.container .credit {
+		  margin: 20px 0;
+		}
+
+		.container .credit a
+		{
+			color: #d43f3a
+		}
+
+	  	.jumbotron
 	  	{
 	  		background-color: #222;
 	  	}
 
-	  	.header
+	  	.header span#codename
 	  	{
-	  		color: #666;
+	  		color: #eee;
+	  		font-weight:bold;
 	  	}
 
 	  	.header small
 	  	{
-	  		color: #444;
+	  		color: #d43f3a;
+	  		font-weight: bold;
 	  	}
 	  </style>
   </head>
   
   <body>
+  	<div id="wrap">
   	<div class="container">
   	<div class="page-header">
-	  <h1 class="header">PROJECT: CODENAME <small>FOR WHEN YOU NEED A CODENAME</small></h1>
+	  <h1>PROJECT: CODENAME <small>FOR WHEN YOU NEED A CODENAME</small></h1>
 	</div>
   	<div class="jumbotron">
-	    <h1><strong id="opType">PROJECT</strong>: <span id="codename">CODENAME</span></h1>
+	    <h1 class="header"><small id="opType">PROJECT</small><br><span id="codename">CODENAME</span></h1>
 	    <a class="btn btn-lg btn-danger" href="#" role="button" id="newProject">It's been compromised!</a>
 	    <a class="btn btn-lg btn-default" href="#" role="button" id="switchType">It's an operation.</a>
 	</div>
-		<div class="center">
-			<a href="https://twitter.com/share" id="twitter" class="twitter-share-button" data-text="" data-url="http://projectcodename.com">Tweet</a>
+		<div class="text-center">
+			<iframe src="http://ghbtns.com/github-btn.html?user=zachwlewis&repo=projectcodename&type=watch&count=true"
+  allowtransparency="true" frameborder="0" scrolling="0" width="110" height="20"></iframe>
+  			<a href="https://twitter.com/share" id="twitter" class="twitter-share-button" data-text="OPERATION: CODENAME &mdash; For when you need a codename." data-via="zachwlewis" data-url="http://projectcodename.com">Tweet</a> 
 		</div>
 	</div>
+	</div>
+
+	<!-- Begin footer -->
+	<div id="footer">
+      <div class="container">
+        <p class="text-muted credit"><b>PROJECT: CODENAME</b> created by <a href="http://zacharylew.is">Zachary Lewis</a>.</p>
+      </div>
+    </div>
 
  	<script src="https://code.jquery.com/jquery.js"></script>
  	<script src="pc.js"></script>
