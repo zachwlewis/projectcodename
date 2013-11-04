@@ -38,14 +38,16 @@ var objects = [
 ]
 
 var type = "PROJECT";
+var codename = "CODENAME";
 
 function createCodename()
 {
 	var f = attributes[Math.floor(Math.random() * attributes.length)].toUpperCase();
 	var l = objects[Math.floor(Math.random() * objects.length)].toUpperCase();
+	codename = f + " " + l;
 
-
-	$('#codename').text(f + " " +  l);
+	$('#codename').text(codename);
+	updateTwitterButton();
 }
 
 function switchType()
@@ -62,6 +64,16 @@ function switchType()
 	}
 
 	$('#opType').text(type);
+	updateTwitterButton();
+}
+
+function updateTwitterButton()
+{
+	$('.twitter-share-button').attr('data-text', type + ": " + codename + " is a go.");
+	if(typeof(twttr) !== 'undefined')
+	{
+		twttr.widgets.load();
+	}
 }
 
 createCodename();
