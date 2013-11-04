@@ -2,28 +2,39 @@ var attributes = [
 	"glass",
 	"desert",
 	"hidden",
-	"opal",
 	"covert",
 	"rowdy",
 	"dangerous",
 	"explosive",
 	"uncanny",
 	"scheming",
-	"decisive"
+	"decisive",
+	"bad",
+	"waning",
+	"warring",
+	// Organic Gems
+	"amber", "ammolite", "bone", "coral", "ivory", "jet", "nacre", "pearl", "obsidian", "unakite",
+	// Regular Gems
+	"agate", "alexandrite", "andalusite", "axinite", "benitoite", "aquamarine", "beryl", "bixbite", "cassiterite", "chrysocolla", "chrysoprase", "clinohumite", "iolite", "danburite", "diamond", "diopside", "dumortierite",
+	"opal",
+	"ruby",
+	"onxy",
+	"sapphire",
+	"emerald",
+	"jade",
 ]
 
 var objects = [
+	// Large cats
+	"panther", "wildcat", "tiger", "lion", "cheeta", "cougar", "leopard",
+	// Snakes
+	"viper", "cottonmouth", "python",
 	"grizzly",
-	"tiger",
-	"viper",
-	"cottonmouth",
 	"wildabeast",
 	"jackal",
-	"python",
 	"nomad",
 	"mainframe",
-	"octopus",
-	"panther"
+	"octopus"
 ]
 
 var type = "PROJECT";
