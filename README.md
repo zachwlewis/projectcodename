@@ -1,4 +1,4 @@
-Project: Codename
+PROJECT: CODENAME
 =================
 
-Need a codename for your project? Use this.
+For when you need a codename.
