@@ -20,7 +20,7 @@ var attributes = [
 
 var objects = [
 	// Large cats
-	"panther", "wildcat", "tiger", "lion", "cheeta", "cougar", "leopard",
+	"panther", "wildcat", "tiger", "lion", "cheetah", "cougar", "leopard",
 	// Snakes
 	"viper", "cottonmouth", "python", "boa", "sidewinder", "cobra",
 	//
