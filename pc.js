@@ -1,24 +1,14 @@
 var attributes = [
-	"glass",
 	// Environ
 	"desert", "tundra", "mountain", "space", "field", "urban",
-	"hidden", "covert",
-	"rowdy",
-	"dangerous",
-	"explosive",
-	"uncanny",
-	"scheming",
-	"decisive",
-	"bad",
-	"shitty",
-	"unnecessary",
-	"threatening",
-	"unknown",
-	"unexpected",
-	"waning",
-	"warring",
-	// Organic Gems
-	"amber", "bone", "coral", "ivory", "jet", "nacre", "pearl", "obsidian",
+	// Stealth and cunning
+	"hidden", "covert", "uncanny", "scheming", "decisive",
+	// Volitility
+	"rowdy", "dangerous", "explosive", "threatening", "warring",
+	// Needs correction
+	"bad", "unnecessary", "unknown", "unexpected", "waning", 
+	// Organic Gems and materials
+	"amber", "bone", "coral", "ivory", "jet", "nacre", "pearl", "obsidian", "glass",
 	// Regular Gems
 	"agate", "beryl", "diamond", "opal", "ruby", "onxy", "sapphire", "emerald", "jade"
 ]
@@ -32,6 +22,8 @@ var objects = [
 	"grizzly", "jackal", "falcon",
 	// Prey
 	"wildabeast", "gazelle", "zebra", "elk", "moose", "deer", "stag", "pony",
+	// HORSES!
+	"horse", "stallion", "foal", "colt", "mare", "yearling", "filly", "gelding",
 	// Occupations
 	"nomad", "wizard", "cleric", "pilot",
 	// Technology
