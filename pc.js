@@ -10,6 +10,11 @@ var attributes = [
 	"scheming",
 	"decisive",
 	"bad",
+	"shitty",
+	"unnecessary",
+	"threatening",
+	"unknown",
+	"unexpected",
 	"waning",
 	"warring",
 	// Organic Gems
@@ -23,18 +28,18 @@ var objects = [
 	"panther", "wildcat", "tiger", "lion", "cheetah", "cougar", "leopard",
 	// Snakes
 	"viper", "cottonmouth", "python", "boa", "sidewinder", "cobra",
-	//
-	"grizzly",
+	// Other predators
+	"grizzly", "jackal", "falcon",
 	// Prey
-	"wildabeast", "gazelle", "zebra", "elk", "moose", "deer", "stag",
-	//
-	"jackal",
-	//
-	"nomad",
+	"wildabeast", "gazelle", "zebra", "elk", "moose", "deer", "stag", "pony",
+	// Occupations
+	"nomad", "wizard", "cleric", "pilot",
 	// Technology
-	"mainframe", "device", "motherboard", "network", "transistor", "packet",
+	"mainframe", "device", "motherboard", "network", "transistor", "packet", "robot",
 	// Sea life
-	"octopus", "lobster", "crab", "barnacle", "hammerhead", "orca", "piranha"
+	"octopus", "lobster", "crab", "barnacle", "hammerhead", "orca", "piranha",
+	// Other
+	"warning", "presence", "weapon"
 ]
 
 var type = "PROJECT";
