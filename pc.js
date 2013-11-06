@@ -30,6 +30,8 @@ var objects = [
 	"mainframe", "device", "motherboard", "network", "transistor", "packet", "robot",
 	// Sea life
 	"octopus", "lobster", "crab", "barnacle", "hammerhead", "orca", "piranha",
+	// Weather
+	"storm", "thunder", "lightning", "rain", "hail", "sun", "drought", "snow",
 	// Other
 	"warning", "presence", "weapon"
 ]
