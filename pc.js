@@ -27,7 +27,7 @@ var objects = [
 	// Occupations
 	"nomad", "wizard", "cleric", "pilot",
 	// Technology
-	"mainframe", "device", "motherboard", "network", "transistor", "packet", "robot",
+	"mainframe", "device", "motherboard", "network", "transistor", "packet", "robot", "android", "robot",
 	// Sea life
 	"octopus", "lobster", "crab", "barnacle", "hammerhead", "orca", "piranha",
 	// Weather
