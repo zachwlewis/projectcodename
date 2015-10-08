@@ -10,7 +10,9 @@ var attributes = [
 	// Organic Gems and materials
 	"amber", "bone", "coral", "ivory", "jet", "nacre", "pearl", "obsidian", "glass",
 	// Regular Gems
-	"agate", "beryl", "diamond", "opal", "ruby", "onyx", "sapphire", "emerald", "jade"
+	"agate", "beryl", "diamond", "opal", "ruby", "onyx", "sapphire", "emerald", "jade",
+	// Colors
+	"red", "orange", "yellow", "green", "blue", "violet",
 ]
 
 var objects = [
