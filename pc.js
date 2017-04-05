@@ -37,7 +37,7 @@ var objects = [
 	// Sea life
 	"octopus", "lobster", "crab", "barnacle", "hammerhead", "orca", "piranha",
 	// Weather
-	"storm", "thunder", "lightning", "rain", "hail", "sun", "drought", "snow", "drizzle"
+	"storm", "thunder", "lightning", "rain", "hail", "sun", "drought", "snow", "drizzle",
 	// Musical
 	"piano", "keyboard", "guitar", "trumpet", "trombone", "flute", "cornet", "horn", "tuba", "clarinet", "saxophone", "piccolo", "violin", "harp", "cello", "drum", "organ", "banjo", "rhythm", "beat", "sound", "song",
 	// Tools
