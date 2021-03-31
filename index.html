@@ -1,10 +1,19 @@
 <!DOCTYPE html>
-  <head>
-    <title>PROJECT: CODENAME</title>
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <style>
 
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-55MTLR09Q0"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-55MTLR09Q0');
+  </script>
+  <title>PROJECT: CODENAME</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <style>
     html,
     body {
       height: 100%;
@@ -25,93 +34,84 @@
     /* Set the fixed height of the footer here */
     #footer {
       height: 60px;
-      background-color: #222; 
+      background-color: #222;
     }
 
     .container .credit {
       margin: 20px 0;
     }
 
-    .container .credit a
-    {
+    .container .credit a {
       color: #d43f3a;
     }
 
-    .container .credit a:hover
-    {
+    .container .credit a:hover {
       color: #d43f3a;
       text-decoration: line-through;
     }
 
-      .main-app
-      {
-        background-color: #222;
-      }
+    .main-app {
+      background-color: #222;
+    }
 
-      .header span#codename
-      {
-        color: #eee;
-        font-weight:bold;
-      }
+    .header span#codename {
+      color: #eee;
+      font-weight: bold;
+    }
 
-      .header small
-      {
-        color: #d43f3a;
-        font-weight: bold;
-      }
+    .header small {
+      color: #d43f3a;
+      font-weight: bold;
+    }
 
-      .btn-lg
-      {
-        margin-bottom: 8px;
-        border-radius: 0;
-      }
+    .btn-lg {
+      margin-bottom: 8px;
+      border-radius: 0;
+    }
 
-      h1, h2, h3
-      {
-        margin-top: 10px;
-      }
+    h1,
+    h2,
+    h3 {
+      margin-top: 10px;
+    }
 
-      h3 small
-      {
-        text-decoration: line-through;
-      }
+    h3 small {
+      text-decoration: line-through;
+    }
 
-      .sharing
-      {
-        margin-top: 20px;
-      }
+    .sharing {
+      margin-top: 20px;
+    }
 
-      .title
-      {
-        background: #fff;
-      }
-    </style>
-  </head>
-  
-  <body>
-    <div id="wrap">
-      <div class="title navbar navbar-default navbar-static-top">
-        <div class="container">
-          <h3>PROJECT: CODENAME <small class="hidden-xs">FOR WHEN YOU NEED A CODENAME</small></h3>
+    .title {
+      background: #fff;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="wrap">
+    <div class="title navbar navbar-default navbar-static-top">
+      <div class="container">
+        <h3>PROJECT: CODENAME <small class="hidden-xs">FOR WHEN YOU NEED A CODENAME</small></h3>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row main-app">
+        <div class="col-xs-12">
+          <h1 class="header"><small id="opType">PROJECT</small><br><span id="codename">CODENAME</span></h1>
+        </div>
+        <div class="col-xs-12 col-sm-6">
+          <a class="btn btn-lg btn-danger btn-block" href="#" role="button" id="newProject">It's been compromised!</a>
+        </div>
+        <div class="col-xs-12 col-sm-6">
+          <a class="btn btn-lg btn-default btn-block" href="#" role="button" id="switchType">It's an operation.</a>
         </div>
       </div>
-      <div class="container">
-        <div class="row main-app">
-            <div class="col-xs-12">
-              <h1 class="header"><small id="opType">PROJECT</small><br><span id="codename">CODENAME</span></h1>
-            </div>
-            <div class="col-xs-12 col-sm-6">
-              <a class="btn btn-lg btn-danger btn-block" href="#" role="button" id="newProject">It's been compromised!</a>
-            </div>
-            <div class="col-xs-12 col-sm-6">
-              <a class="btn btn-lg btn-default btn-block" href="#" role="button" id="switchType">It's an operation.</a>
-            </div>
-        </div>
       <div class="row">
         <div class="col-xs-12 sharing text-center">
-        <iframe src="http://ghbtns.com/github-btn.html?user=zachwlewis&repo=projectcodename&type=watch&count=true"
-    allowtransparency="true" frameborder="0" scrolling="0" width="110" height="20"></iframe>
-          <a href="https://twitter.com/share" id="twitter" class="twitter-share-button" data-text="OPERATION: CODENAME &mdash; For when you need a codename." data-via="zachwlewis" data-url="http://projectcodename.com">Tweet</a> 
+          <iframe src="http://ghbtns.com/github-btn.html?user=zachwlewis&repo=projectcodename&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="110" height="20"></iframe>
+          <a href="https://twitter.com/share" id="twitter" class="twitter-share-button" data-text="OPERATION: CODENAME &mdash; For when you need a codename." data-via="zachwlewis" data-url="http://projectcodename.com">Tweet</a>
           <iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fprojectcodename.com&amp;width&amp;height=21&amp;colorscheme=dark&amp;layout=button_count&amp;action=like&amp;show_faces=false&amp;send=false&amp;appId=166438340229785" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:21px;" width="110" allowTransparency="true"></iframe>
         </div>
       </div>
@@ -120,28 +120,31 @@
 
   <!-- Begin footer -->
   <div id="footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-12">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
           <p class="text-muted credit text-right"><b>A <a href="http://zacharylew.is">ZACHARY LEWIS</a> JOINT</b></p>
-        </div>
         </div>
       </div>
     </div>
+  </div>
 
   <script src="https://code.jquery.com/jquery.js"></script>
   <script src="pc.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <!-- Twitter integration -->
-  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+  <script>!function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = "https://platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs); } }(document, "script", "twitter-wjs");</script>
   <!-- Google analytics -->
   <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date(); a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
     ga('create', 'UA-45437517-1', 'projectcodename.com');
     ga('send', 'pageview');
   </script>
-  </body>
+</body>
+
 </html>
