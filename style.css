@@ -1,0 +1,146 @@
+:root {
+  /* Just run the sans-serif system font stack. */
+  --system-font: -apple-system, BlinkMacSystemFont, avenir next, avenir,
+    segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
+  font-family: var(--system-font);
+  --color-white: #ffffff;
+  --color-black: #222222;
+  --color-red: #d43f3a;
+  font-size: 16px;
+  --button-spacing: 0.5rem;
+  --controls-direction: row;
+  --page-width: 50rem;
+  --centering-margin: calc(50vw - var(--page-width) * 0.5);
+}
+
+@media screen and (max-width: 50rem) {
+  :root {
+    --centering-margin: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  :root {
+    --button-spacing: 0;
+    --controls-direction: column;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--color-black);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header style */
+header {
+  background: var(--color-white);
+  flex: 0 0 auto;
+  margin: 0;
+  padding: 0;
+}
+
+header h1,
+header h2 {
+  font-weight: 400;
+  margin: 1rem var(--centering-margin);
+  padding: 0 1rem;
+  line-height: 1rem;
+}
+
+header h1 {
+  font-size: 2rem;
+}
+
+header h2 {
+  font-size: 1.5rem;
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+/* Footer style */
+footer {
+  flex: 0 0 auto;
+  text-align: right;
+  margin: 0 var(--centering-margin);
+  font-size: 1rem;
+  padding: 1rem;
+  color: var(--color-white);
+  font-weight: 600;
+}
+
+footer a {
+  color: var(--color-red);
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: line-through;
+}
+
+/* Content style */
+#content {
+  flex: 1 0 auto;
+  margin: 0 var(--centering-margin);
+  padding: 1rem;
+  justify-content: center;
+  max-width: var(--page-width);
+}
+
+#opType {
+  color: var(--color-red);
+}
+
+#codename {
+  color: var(--color-white);
+}
+
+#controls {
+  display: flex;
+  flex-direction: var(--controls-direction);
+  flex-wrap: nowrap;
+}
+
+#controls > * {
+  flex: 1 0 calc(50% - 0.5rem);
+}
+
+.btn {
+  display: inline-block;
+  padding: 1rem 0;
+  text-decoration: none;
+  font-weight: 600;
+  margin: 0;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+#newProject {
+  background: var(--color-red);
+  color: var(--color-white);
+  margin-right: var(--button-spacing);
+}
+
+#switchType {
+  background: var(--color-white);
+  color: var(--color-black);
+  margin-left: var(--button-spacing);
+}
+
+#social {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#social > * {
+  flex: 0 0 auto;
+}

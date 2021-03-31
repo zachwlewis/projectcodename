@@ -46,40 +46,55 @@ var objects = [
 	"warning", "presence", "weapon", "player", "ink", "case", "cup", "chain", "door"
 ]
 
-var type = "PROJECT";
-var codename = "CODENAME";
+const newCodenameElem = document.getElementById('newProject');
+const switchElem = document.getElementById('switchType');
+
+let type = "PROJECT";
+let codename = "CODENAME";
 
 function createCodename()
 {
-	var f = attributes[Math.floor(Math.random() * attributes.length)].toUpperCase();
-	var l = objects[Math.floor(Math.random() * objects.length)].toUpperCase();
-	codename = f + " " + l;
-
-	$('#codename').text(codename);
+	const f = attributes[Math.floor(Math.random() * attributes.length)].toUpperCase();
+	const l = objects[Math.floor(Math.random() * objects.length)].toUpperCase();
+	codename = `${f} ${l}`;
+	const elem = document.getElementById('codename');
+	elem.innerText = codename;
 	updateTwitterButton();
 }
 
 function switchType()
 {
-	if (type == "PROJECT")
+	const titleElem = document.getElementById('opType');
+	if (type === "PROJECT")
 	{
 		type = "OPERATION";
-		$('#switchType').text("It's a project.");
+		switchElem.innerText = `It's a project.`;
 	}
 	else
 	{
 		type = "PROJECT";
-		$('#switchType').text("It's an operation.");
+		switchElem.innerText = `It's an operation.`;
 	}
 
-	$('#opType').text(type);
+	titleElem.innerText = type;
 	updateTwitterButton();
 }
 
 function updateTwitterButton()
 {
-	$('#twitter').replaceWith("<a href=\"https://twitter.com/share\" id=\"twitter\" class=\"twitter-share-button\" data-via=\"zachwlewis\" data-url=\"http://projectcodename.com\">Tweet</a>");
-	$('#twitter').attr('data-text', type + ": " + codename + " is a go.");
+	let elem = document.getElementsByClassName('twitter-share-button')[0];
+	if (elem)
+	{
+		let r = document.createElement('a');
+		r.setAttribute('href','https://twitter.com/share');
+		r.setAttribute('id','twitter');
+		r.setAttribute('class','twitter-share-button');
+		r.setAttribute('data-text',`${type}: ${codename} is a go.`);
+		r.setAttribute('data-via', 'zachwlewis');
+		r.setAttribute('data-url','http://projectcodename.com');
+		r.innerText = 'Tweet';
+		elem.replaceWith(r);	
+	}
 
 	if(typeof(twttr) !== 'undefined')
 	{
@@ -88,5 +103,13 @@ function updateTwitterButton()
 }
 
 createCodename();
-$('#newProject').click(createCodename);
-$('#switchType').click(switchType);
+
+newCodenameElem.onclick = (e) => {
+	e.preventDefault();
+	createCodename();
+}
+
+switchElem.onclick = (e) => {
+	e.preventDefault();
+	switchType();
+}

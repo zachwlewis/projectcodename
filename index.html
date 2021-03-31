@@ -7,131 +7,38 @@
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
-
     gtag('config', 'G-55MTLR09Q0');
   </script>
   <title>PROJECT: CODENAME</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <style>
-    html,
-    body {
-      height: 100%;
-      background: #222;
-      /* The html and body elements cannot have any padding or margin. */
-    }
-
-    /* Wrapper for page content to push down footer */
-    #wrap {
-      min-height: 100%;
-      height: auto;
-      /* Negative indent footer by its height */
-      margin: 0 auto -60px;
-      /* Pad bottom by footer height */
-      padding: 0 0 60px;
-    }
-
-    /* Set the fixed height of the footer here */
-    #footer {
-      height: 60px;
-      background-color: #222;
-    }
-
-    .container .credit {
-      margin: 20px 0;
-    }
-
-    .container .credit a {
-      color: #d43f3a;
-    }
-
-    .container .credit a:hover {
-      color: #d43f3a;
-      text-decoration: line-through;
-    }
-
-    .main-app {
-      background-color: #222;
-    }
-
-    .header span#codename {
-      color: #eee;
-      font-weight: bold;
-    }
-
-    .header small {
-      color: #d43f3a;
-      font-weight: bold;
-    }
-
-    .btn-lg {
-      margin-bottom: 8px;
-      border-radius: 0;
-    }
-
-    h1,
-    h2,
-    h3 {
-      margin-top: 10px;
-    }
-
-    h3 small {
-      text-decoration: line-through;
-    }
-
-    .sharing {
-      margin-top: 20px;
-    }
-
-    .title {
-      background: #fff;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <div id="wrap">
-    <div class="title navbar navbar-default navbar-static-top">
-      <div class="container">
-        <h3>PROJECT: CODENAME <small class="hidden-xs">FOR WHEN YOU NEED A CODENAME</small></h3>
-      </div>
+  <header>
+    <h1>PROJECT: CODENAME</h1>
+    <h2>FOR WHEN YOU NEED A CODENAME</h2>
+  </header>
+
+  <div id="content">
+    <h1 class="header"><small id="opType">PROJECT</small><br><span id="codename">CODENAME</span></h1>
+    <div id="controls">
+      <a class="btn" href="#" role="button" id="newProject">It's been compromised!</a>
+      <a class="btn" href="#" role="button" id="switchType">It's an operation.</a>
     </div>
-    <div class="container">
-      <div class="row main-app">
-        <div class="col-xs-12">
-          <h1 class="header"><small id="opType">PROJECT</small><br><span id="codename">CODENAME</span></h1>
-        </div>
-        <div class="col-xs-12 col-sm-6">
-          <a class="btn btn-lg btn-danger btn-block" href="#" role="button" id="newProject">It's been compromised!</a>
-        </div>
-        <div class="col-xs-12 col-sm-6">
-          <a class="btn btn-lg btn-default btn-block" href="#" role="button" id="switchType">It's an operation.</a>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-xs-12 sharing text-center">
-          <iframe src="http://ghbtns.com/github-btn.html?user=zachwlewis&repo=projectcodename&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="110" height="20"></iframe>
-          <a href="https://twitter.com/share" id="twitter" class="twitter-share-button" data-text="OPERATION: CODENAME &mdash; For when you need a codename." data-via="zachwlewis" data-url="http://projectcodename.com">Tweet</a>
-          <iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fprojectcodename.com&amp;width&amp;height=21&amp;colorscheme=dark&amp;layout=button_count&amp;action=like&amp;show_faces=false&amp;send=false&amp;appId=166438340229785" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:21px;" width="110" allowTransparency="true"></iframe>
-        </div>
-      </div>
+    <div id="social">
+      <iframe src="http://ghbtns.com/github-btn.html?user=zachwlewis&repo=projectcodename&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="110" height="20"></iframe>
+      <a href="https://twitter.com/share" id="twitter" class="twitter-share-button" data-text="OPERATION: CODENAME &mdash; For when you need a codename." data-via="zachwlewis" data-url="http://projectcodename.com">Tweet</a>
+      <iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fprojectcodename.com&amp;width&amp;height=21&amp;colorscheme=dark&amp;layout=button_count&amp;action=like&amp;show_faces=false&amp;send=false&amp;appId=166438340229785" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:21px;" width="110" allowTransparency="true"></iframe>
+
     </div>
   </div>
 
   <!-- Begin footer -->
-  <div id="footer">
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-12">
-          <p class="text-muted credit text-right"><b>A <a href="http://zacharylew.is">ZACHARY LEWIS</a> JOINT</b></p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <script src="https://code.jquery.com/jquery.js"></script>
+  <footer>
+    A <a href="http://zacharylew.is">ZACHARY LEWIS</a> JOINT
+  </footer>
   <script src="pc.js"></script>
-  <script src="js/bootstrap.min.js"></script>
   <!-- Twitter integration -->
   <script>!function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = "https://platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs); } }(document, "script", "twitter-wjs");</script>
   <!-- Google analytics -->
